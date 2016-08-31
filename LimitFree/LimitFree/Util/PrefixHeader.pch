@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  LimitFree
+//
+//  Created by qianfeng on 16/8/30.
+//  Copyright © 2016年 qianfeng. All rights reserved.
+//
+
+//常量的定义:创建一个other中的PrefileHeader.pch文件
+//在setting中设置 prefile header的路径($(SRCROOT)...)
+//导入需要使用常量的文件的头文件
+//宏定义常量
+#import "LFBaseViewController.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define kLimitUrl (@"http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=%d")
+#define kReduceUrl (@"http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=%d")
+
+
+#endif /* PrefixHeader_pch */
